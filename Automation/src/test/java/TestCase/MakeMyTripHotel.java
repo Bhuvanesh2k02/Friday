@@ -38,6 +38,8 @@ public class MakeMyTripHotel extends Browser_Launch{
 		
 	//@BeforeMethod
 	public void closeads() {
+		
+		//we need to click on iframe
 		try {
 			WebElement_Common_Usage.ExplicitWaitForClickable(browser, 60, By.className("close"));
 			WebElement_Common_Usage.ClickOnClose(browser.findElement(By.className("close")));
