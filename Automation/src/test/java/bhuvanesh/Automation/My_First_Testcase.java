@@ -13,14 +13,14 @@ import com.aventstack.extentreports.Status;
 
 //public class My_First_Testcase extends Writing_Reports
 //{
-
-//	//@BeforeSuite
+//
+//	@BeforeSuite
 //	public void BeforeSuite() {
 //		CreationOf_ExtentReport_FrameWork();
 //		System.out.println("BeforeSuite");
 //	}
 //	
-//	//@Test(priority=2,enabled=true)
+//	@Test(priority=2,enabled=true)
 //	public void TestCase2() {
 //		test=report.createTest("TestCase2", "TestCase2 has failed");
 //		Assert.assertTrue(true, "Please correct your TestCase");
@@ -75,13 +75,13 @@ import com.aventstack.extentreports.Status;
 //	@AfterTest
 //	public void TestCase_2() {
 //	
-//		System.out.println("AeforeTest");
+//		System.out.println("AfterTest");
 //	}
 //	
 //	@AfterSuite
 //	public void TestCase_3() {
 //		report.flush();
-//		System.out.println("AeforeSuite");
+//		System.out.println("AfterSuite");
 //	}
 //	
 //}

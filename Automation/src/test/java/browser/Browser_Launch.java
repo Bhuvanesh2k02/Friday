@@ -22,8 +22,8 @@ public class Browser_Launch {
 	public void LaunchBrowser() throws IOException {
 		//String browserName = propertyFile.ReadDataFromProperty().getProperty("browser");
 		browser = new ChromeDriver();
-		browser.get("https://www.makemytrip.com/");
 		browser.manage().window().maximize();
+		browser.get("https://www.makemytrip.com/");
 		LauchReports();
 	}
 	
@@ -35,9 +35,10 @@ public class Browser_Launch {
 		htmlReporter.config().setChartVisibilityOnOpen(true);
 		htmlReporter.config().setDocumentTitle("Automation");
 		htmlReporter.config().setReportName("MakeMyTrip");
-		htmlReporter.config().setTestViewChartLocation(ChartLocation.TOP);
 		htmlReporter.config().setTheme(Theme.DARK);
+		htmlReporter.config().setTestViewChartLocation(ChartLocation.TOP);
 		htmlReporter.config().setTimeStampFormat("EEEE, mmmm dd, yyyy, hh:mm:ss a '('zzz')'");
+		
 	}
 	
 	public void CloseReport() {

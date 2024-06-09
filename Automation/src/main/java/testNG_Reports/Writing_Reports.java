@@ -1,29 +1,18 @@
-package bhuvanesh.Automation;
+package testNG_Reports;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
-/*
- * @BeforeSuite --It will run before all the test
- * @BeforeTest --It will run before all the class
- * @BeforeClass - it will run before all the TestCase in that class
- * @BeforeMethod --It will run before each TestCase
- * @Test--> TestCase
- * @AfterMethod --It will run after each TestCase
- * @AfterClass - it will run after all the TestCase in that class
- * @AfterTest --It will run after all the class
- * @AfterSuite --It will run after all the test  
- * 
- * Extent AventReport Classes:
- * ExtentHtmlReporter --> report location
- * ExtentReports --> it use to create a Test in each & every Method
- * ExtentTest -- write in that report
- */
 
 public class Writing_Reports {
 
+/** Extent AventReport Classes:*/
+	 /* ExtentHtmlReporter --> report location
+	 * ExtentReports --> it use to create a Test in each & every Method
+	 * ExtentTest -- write in that report
+	 */
 	public static ExtentHtmlReporter reporter;
 	public static ExtentReports report;
 	public static ExtentTest test;
