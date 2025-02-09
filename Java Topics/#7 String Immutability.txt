@@ -1,0 +1,43 @@
+Mutable vs Immutable:
+String -> immutable (Using concat(), Arrays.sort() & Arrays.toString() method)
+StringBuffer -> mutable (Using append() method)
+StringBuilder -> mutable (Using append() method)
+
+		String str="Selenium";
+		*str.concat(" is open source software");
+		System.out.println("immutable of String: "+str);//immutable
+		String str1=str.concat(" is open source software");//We can concat in another string object.
+		System.out.println("mutable of String: "+str1);//mutable
+		
+		int a[]= {10,20,40,90,50,70,100,80,30};
+		System.out.println("Before sort of String: "+Arrays.toString(a));
+	        *Arrays.sort(a);
+		System.out.println("Mutable String After sort: "+Arrays.toString(a));//mutable
+		
+		String S="Selenium";
+		*S.concat(" is open source software");
+		System.out.println("immutable of String: "+S);//immutable because cannot change the original value.
+		
+		StringBuffer S1=new StringBuffer("Selenium");
+		*S1.append("is open source software");
+		System.out.println("mutable of StringBuffer: "+S1);//mutable because can change the original value.
+		
+		StringBuilder S2=new StringBuilder("Selenium");
+		*S2.append("is open source software");
+		System.out.println("mutable of StringBuilder: "+S2);//mutable because can change the original value.
+		
+		
+		//This type of String questions are ask in interviews.
+		System.out.println();
+		String s="Selenium";
+		String s1=new String("Selenium");
+		System.out.println(s==s1);//false because of two different objects are stored values.
+		System.out.println(s.equals(s1));//true because of both the strings are stored the same values.
+		String s2=s1;
+		System.out.println(s2==s);//false because of two different objects are stored values.
+		System.out.println(s2==s1);//true because of both the strings are stored the same values.
+		String s3=new String("Selenium");
+		System.out.println(s3==s2);//false because of two different objects are stored values.
+		System.out.println(s3==s1);//false because of two different objects are stored values.
+		String s4="Selenium";
+		System.out.println(s4==s);//true because of both the strings are stored the same values.

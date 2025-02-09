@@ -1,0 +1,64 @@
+Passing parameters to main method:
+right click  -select run configuration -go to arguments -give data/value of string -enter run.
+
+example:
+public static void main(String []agrs){
+agrs.lenght; -> it is a length of the String array.
+for(String value:agrs){
+System.Out.Println(value);-> This for loop is run like one by one of strings.
+}
+}
+ 
+
+Inheritance:
+Acquiring all the properties(Variable) & Behaviour(method) extends/taking from one class to another class.
+
+Objectives:
+1. Re-usability.
+2. Avoid duplication.
+
+Types:
+1.Single inheritance.
+2.Multi Level inheritance.
+3.Hierarchy inheritance.
+4.Multiple inheritance.
+
+note: We can use class concepts but we can create only one public class.
+multiple inheritance- We cannot use class concepts in multiple inheritance because it doesn't support class concepts but we can achieve by using interface concepts.
+
+example:
+single:
+      O->Parent class
+      |
+      o->Child class
+
+multi level:
+      O->Parent class
+      |
+      o->Child class->Parent class
+      |
+      o->Child class->Parent class
+      |
+      o->Child class
+
+hierarchy:
+      O->Parent class
+     /|\
+    o o o->Child class
+
+multiple:
+     O O O->Parent class
+      \|/
+       o->Child class
+
+Why class concepts doesn't support in multiple inheritance?
+When we extends multiple parent class if there are any duplicated methods there is an ambiguity issue will come because it doesn't know which method we have to acquire from parent class to child class.
+
+If there is no duplicated methods then also we get ambiguity issue because whenever we create a new class by default that class extends from object class.
+
+object class is a root class/parent class of all the classes in java.
+
+for example:2 parent classes have some methods but when try to use any method in child class it will confuse
+
+
+

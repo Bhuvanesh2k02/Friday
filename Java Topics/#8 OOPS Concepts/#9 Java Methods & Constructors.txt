@@ -1,0 +1,89 @@
+method:
+Block or group of statements which will perform certain task.
+We have to call the method though object.
+
+Types:
+1. without params without value
+2. without params with value
+3. with params without value
+4. with params with value
+
+example:
+1. void m1() {
+   }
+
+2. String m2() {
+   return ("hello");
+   }
+
+3. void m3(String name){
+   System.out.ptrinln(name);
+   }
+4. String m4(String name) {
+   return ("hello"+name);
+   }
+
+In many ways we can store data into variables:
+
+class student{
+int sid;
+String sname;
+char grad;
+
+void printstrudentdata() {
+System.out.ptrinln(sid+"  "+sname+"  "+grad+"  ")
+}
+
+void setstudentdata(int id, String name, char gr){
+int=id;
+String=name;
+char=gr;
+}
+main method{
+student s=new student();
+1) Using object variable:
+s.sid=101;
+s.sname="john";
+s.grad="A";
+
+2) Using method
+s.setstudentdata();
+s.printstrudentdata();
+
+3) Using constructor:
+The method name should be same as the class name and constructor will never not return any value not even void but constructor will take params just like a method. The constructor is only meant for initializing the data in variables we should not write anything inside this constructor. 
+
+difference constructor vs method: interview question
+Method:
+1. Method name can be anything.
+2. Method may or may not return a value.
+3. If method is not returning any value, then specify/mention void.
+4. Method can take params.
+5.We have to invoke/call methods explicitly through object.
+6. Used for specifying logic.
+
+Constructor:
+1. Constructor name should be same as class name.
+2. Constructor  will never return a value (not even void).
+3. We don't specify the void.
+4. Constructor can take params.
+5. Constructor automatically invoked at the time of object creation.
+6. used for initializing the values of the variables.
+types:
+default constructor.
+params constructor.
+syntax:
+int x,y;
+student(){
+x=100;
+y=200;
+}
+student(int a, int b){
+x=a;
+y=b;
+}
+main method{
+student s=new student();this object invokes/call default constructor.
+student s=new student(10, 20); this object invokes/call params constructor.
+}
+}

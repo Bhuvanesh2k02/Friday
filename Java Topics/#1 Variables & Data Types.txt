@@ -1,0 +1,27 @@
+
+Variables: its a container which hold the value.
+syntax: access modifier datatype variable name = value.
+its also called as identifiers.
+3 Types:
+Local - with in the method.
+Global - With in the class out side of all the methods.
+Static - memory will be allocated during the program execution.
+
+Data Types:
+primitive datatypes:
+1) Whole number/Numeric value - int --> e.g. int a= 10
+2) Whole number/Numeric value - long --> e.g. long a= 10
+3) Decimal Value float --> e.g. float b= 2.3f
+4) Decimal Value double --> e.g. double b= 2.345
+5) character     char --> e.g. char c= 's'
+6) Whole number/Numeric value Short --> e.g. Short s = 10
+7) True or False   Boolean --> e.g. Boolean status = true
+8) numbers(ASCII value) byte -- > e.g. byte name = 's'
+
+non primitive data types:
+1.class
+2.Interface
+3.Arrays
+4.String
+5.Object 
+....etc.

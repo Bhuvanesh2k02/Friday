@@ -1,0 +1,76 @@
+Polymorphism:
+poly - many
+morphism - forms
+simply says - One thing can have many forms.
+
+note: One thing can have many forms. we can achieve polymorphism by using Overloading concepts.
+example: Shape - circle, square, triangle, rectangle, etc.
+
+Overloading - We can create multiple methods with the same name with the same class but we have to change that data type of parameters, or the number of parameters, or the order of parameters.
+
+note: Overloading is applicable for the methods and the constructors.
+example:
+1.public void method1 (int a, int b){} - same/number of datatype/parameters
+
+2.public void method1 (int a, String b){} - different datatype/parameters
+
+3.public void method1 (String a, int b){} - order of parameter and different datatype/parameters
+
+4.public void method1 (int a, int b, int c){} - number of parameters
+
+5.public void method1 (double a, int b){} - different datatype/parameters
+
+Constructor Overloading:
+note: We can create multiple methods with the same class name. Those methods will executed in main method, we have to create class object and we are giving the values into the same class object that will be invoke the constructor methods.
+
+example:
+1.public class1 (int a, int b){} - same/number of datatype/parameters
+
+2.public class1 (int a, String b){} - different datatype/parameters
+
+3.public class1 (String a, int b){} - order of parameter and different datatype/parameters
+
+4.public class1 (int a, int b, int c){} - number of parameters
+
+5.public class1 (double a, int b){} - different datatype/parameters
+
+Main method Overloading:
+We can create multiple methods with the same main method name but we have to differentiate all those methods. Those methods will executed in main method with creation of class object.
+
+example:
+1.public void main (int a, int b){} - same/number of datatype/parameters
+
+2.public void main (int a, String b){} - different datatype/parameters
+
+3.public void main (String a, int b){} - order of parameter and different datatype/parameters
+
+4.public void main (int a, int b, int c){} - number of parameters
+
+5.public void main (double a, int b){} - different datatype/parameters
+
+Encapsulation:
+1. All variables should be private.
+2. For every variable there should be 2 methods(get & set)
+3. Variables can be operated only through methods.
+example:
+public class Account
+{
+private int accno;
+private String name;
+private double amount;
+
+void setAccno(int accno)
+{
+    this.accno=accno;
+}
+int getAccno()
+{
+return accno;
+}
+
+}
+note: Whenever we are using class variable name and local variable name are same, then we have to differentiate them by using "this" keyword. So "this" keyword is representing the current class variable name.
+"return" keyword is representing the current class variable.
+
+tips:
+Go to the source option and select Generate getters and setters then select variables click generate.

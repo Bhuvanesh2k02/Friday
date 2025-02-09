@@ -1,0 +1,41 @@
+OOPS Concepts:
+Class
+Object
+Polymorphism
+Encapsulation
+Inheritance
+Data Abstraction
+
+Class:
+1) Class is a collection of attributes and behavior. ex. Animal (Class)-->Dog, Elephant, Horse, etc.
+2) Class is collection of Variables and methods.
+3) Class is Logical entity/blue print.
+4) Will not occupied any space in the memory.
+Syntax:
+Class Employee {
+Variables
+Methods
+}
+
+Object:
+1) Object is an instance of a class/object will be created by using class.
+2) Object is physical entity.
+3) Occupy space in memory.
+4) We can create multiple objects for single class.
+Syntax:
+Employee emp=new Employee();
+"Employee" is a variable type.
+"emp" is a variable name.
+"new Employee()" is hold the objects of the employee class.
+"Employee()" is basically called as Constructor.
+
+Methods:
+public static void main(String[] args){
+}
+1) This method is special type of the method.
+2) We should not compare to normal method because if you create an main method then only we execute the class.
+3) if you do not have an main method you can not execute the class.
+4) execution is always starts from the main method.
+5) Java is always look for the main the method in class before execution.
+6) That is the reason you have to create the main method in the class.
+extra point:7) We can create many classes in our project but all the classes we will control or we will organize from one main class and which should contains a main method. 

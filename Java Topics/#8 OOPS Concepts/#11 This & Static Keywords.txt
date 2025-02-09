@@ -1,0 +1,48 @@
+Types of Variable:
+1. Class variable or instance variable.
+2. Local variable.
+3. Global variable.-> we should not use this type of variable in java.
+
+class variable - it is used in class but outside of the methods.
+local variable - it is used in methods.
+global variable - it is used in outside of the class.
+
+"this" Keyword:
+ Whenever we are using class variable name and local variable name are same, then we have to differentiate them by using "this" keyword weather it is in method or constructor.
+example:
+Constructor:
+method1(int a, int b)
+{
+this.a=a;
+this.b=b;
+}
+Method:
+void method1(int a, int b)
+{
+this.a=a;
+this.b=b;
+}
+
+Static keyword:
+Static keyword can be applied for variables and methods.
+
+when we have to use static keyword?
+Why we have to use static keyword?
+What is the Benefit of static keyword?
+
+1.Static method can access static stuff directly without creating object.
+2.Static method can access non-static stuff through object.
+3.non-static method can access everything directly.
+
+example:
+class System
+{
+static PrintStream Out;
+}
+
+invoking class: System.Out.Println();
+System - it is a predefind class in java.
+Out - it is a Printstream of variable of static type.
+Println or print- the method which is belongs to printstream class.
+
+
